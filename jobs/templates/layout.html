@@ -10,8 +10,8 @@
   <body>
     <div class="container top">
       <div class="content">
-        {% block content %}
-        {% endblock %}
+        {% from '_macros.html' import show_job, show_jobs with context %}
+
       </div>
     </div>
   </body>
